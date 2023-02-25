@@ -5,7 +5,7 @@
 192.168.41.137 - - [25/Feb/2023 21:22:22] "GET / HTTP/1.1" 404 -
 192.168.41.137 - - [25/Feb/2023 21:23:42] "GET /api/activities/home HTTP/1.1" 200 -
 192.168.41.137 - - [25/Feb/2023 21:23:53] "GET /api/activities/home HTTP/1.1" 200 -
-````
+``````
 
 #docker image created
 ````
