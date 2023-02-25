@@ -49,3 +49,4 @@ gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker compose up
 ````
 # frontend and backend connected, image:
 
+![docker](https://user-images.githubusercontent.com/17748375/221382584-901ca3cd-aea2-4e97-9ec3-b047b3f35222.png)
