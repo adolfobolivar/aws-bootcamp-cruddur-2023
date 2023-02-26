@@ -50,3 +50,13 @@ gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker compose up
 # frontend and backend connected, image:
 
 ![docker](https://user-images.githubusercontent.com/17748375/221382584-901ca3cd-aea2-4e97-9ec3-b047b3f35222.png)
+
+# Install and get access to Posgres DB
+````
+gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ psql -Upostgres --host localhost
+Password for user postgres: 
+psql (13.10 (Ubuntu 13.10-1.pgdg20.04+1))
+Type "help" for help.
+
+postgres=# 
+````
