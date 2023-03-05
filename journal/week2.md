@@ -4,3 +4,5 @@
 
 # Finished to instrument the backend to use OTEL with Honeycomb.io as the provider
 ![honeycomb](https://user-images.githubusercontent.com/17748375/222939586-dea2da03-c871-4304-b867-36bc4ca6b626.png)
+
+# x-ray traces and segment configured
