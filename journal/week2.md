@@ -6,3 +6,4 @@
 ![honeycomb](https://user-images.githubusercontent.com/17748375/222939586-dea2da03-c871-4304-b867-36bc4ca6b626.png)
 
 # x-ray traces and segment configured
+![xray](https://user-images.githubusercontent.com/17748375/222966153-78f3a72b-b146-4845-9258-6c562c8fc8ec.png)
