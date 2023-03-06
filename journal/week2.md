@@ -10,3 +10,5 @@
 
 # 4. Cloudwatch logs configured
 ![cloudwatch](https://user-images.githubusercontent.com/17748375/223002329-e2574141-596a-4370-bb16-a9139f681838.png)
+
+# 5. Rollbar configured
