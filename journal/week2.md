@@ -12,3 +12,4 @@
 ![cloudwatch](https://user-images.githubusercontent.com/17748375/223002329-e2574141-596a-4370-bb16-a9139f681838.png)
 
 # 5. Rollbar configured
+![rollbar](https://user-images.githubusercontent.com/17748375/223005626-762153dd-f177-4731-9d2d-d391cdb0cb5a.png)
