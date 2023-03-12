@@ -5,6 +5,7 @@ email_verified: True
 name: "Adolfo"
 preferred_username:"Adolfo"
 sub: "a14530c2-315c-44a5-aa1d-db5a1922d064"
+
 ![auth done](https://user-images.githubusercontent.com/17748375/224552769-82699cc4-f919-422e-9a44-55f10def21d9.png)
 
 #Signup page sync with Cognito
