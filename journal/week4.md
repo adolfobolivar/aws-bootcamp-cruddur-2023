@@ -21,10 +21,10 @@ NOTICE:  table "activities" does not exist, skipping
 DROP TABLE
 CREATE TABLE
 CREATE TABLE
-```
+````
 
 Tables were created by bash script:
-```
+````
 cruddur=# \dt
            List of relations
  Schema |    Name    | Type  |  Owner   
