@@ -41,9 +41,11 @@ db-schema-load
 /workspace/aws-bootcamp-cruddur-2023/backend-flask/db/seed.sql
 INSERT 0 2
 INSERT 0 1
-```
+`````
 
 Query to db successful:
+
+![query](https://user-images.githubusercontent.com/17748375/226485441-facb6108-0a38-4321-add7-e8b8adb20ff8.png)
 
 
 Connection to AWS RDS Ok:
