@@ -42,3 +42,32 @@ db-schema-load
 INSERT 0 2
 INSERT 0 1
 ```
+
+Query to db successful:
+
+
+Connection to AWS RDS Ok:
+````
+cruddur=> \l
+                                  List of databases
+   Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
+-----------+----------+----------+-------------+-------------+-----------------------
+ cruddur   | root     | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ postgres  | root     | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ ````
+
+Schema created on AWS RDS
+````
+$ ./bin/db-schema-load prod
+== db-schema-load
+db-schema-load
+/workspace/aws-bootcamp-cruddur-2023/backend-flask/db/schema.sql
+using production
+CREATE EXTENSION
+NOTICE:  table "users" does not exist, skipping
+DROP TABLE
+NOTICE:  table "activities" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+````
