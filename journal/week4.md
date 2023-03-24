@@ -73,3 +73,16 @@ DROP TABLE
 CREATE TABLE
 CREATE TABLE
 ````
+
+Information from Cognito saved in our database
+````
+cruddur=> SELECT * FROM USERS
+;
+-[ RECORD 1 ]---+-------------------------------------
+uuid            | 55a1843b-53e0-42f3-97ce-5f370aa676c0
+display_name    | adolfo
+handle          | is
+email           | is@hotmail.com
+cognito_user_id | ea84081e-fffa-4712-9ac0-437bd344da56
+created_at      | 2023-03-24 15:45:27.7742
+````
