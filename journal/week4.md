@@ -86,3 +86,34 @@ email           | is@hotmail.com
 cognito_user_id | ea84081e-fffa-4712-9ac0-437bd344da56
 created_at      | 2023-03-24 15:45:27.7742
 ````
+activities option working as expected:
+````
+[2023-03-24 19:18:32,255] DEBUG in app: ea84081e-fffa-4712-9ac0-437bd344da56
+192.168.121.139 - - [24/Mar/2023 19:18:32] "GET /api/activities/home HTTP/1.1" 200 -
+192.168.121.139 - - [24/Mar/2023 19:18:50] "OPTIONS /api/activities HTTP/1.1" 200 -
+192.168.121.139 - - [24/Mar/2023 19:18:50] "POST /api/activities HTTP/1.1" 200 -
+````
+activities entries in RDS:
+````
+-[ RECORD 5 ]----------+-------------------------------------
+uuid                   | a2517027-a8be-43f6-86c6-86625bfa9a1b
+user_uuid              | 7f7f60ca-01f1-4482-9ee1-a1b35520f829
+message                | logs
+replies_count          | 0
+reposts_count          | 0
+likes_count            | 0
+reply_to_activity_uuid | 
+expires_at             | 2023-03-31 19:17:22.337249
+created_at             | 2023-03-24 19:17:22.371708
+-[ RECORD 6 ]----------+-------------------------------------
+uuid                   | 2e743b93-c2bc-40b8-a39e-f514d419c8af
+user_uuid              | 7f7f60ca-01f1-4482-9ee1-a1b35520f829
+message                | test again
+replies_count          | 0
+reposts_count          | 0
+likes_count            | 0
+reply_to_activity_uuid | 
+expires_at             | 2023-03-31 19:18:50.585764
+created_at             | 2023-03-24 19:18:50.620283
+````
+q
