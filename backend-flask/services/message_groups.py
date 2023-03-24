@@ -1,24 +1,17 @@
 from datetime import datetime, timedelta, timezone
-class MessageGroups:
-  def run(user_handle):
-    model = {
-      'errors': None,
-      'data': None
-    }
+from opentelemetry import trace
 
-    now = datetime.now(timezone.utc).astimezone()
-    results = [
-      {
-        'uuid': '24b95582-9e7b-4e0a-9ad1-639773ab7552',
-        'display_name': 'Andrew Brown',
-        'handle':  'andrewbrown',
-        'created_at': now.isoformat()
-      },
-      {
-        'uuid': '417c360e-c4e6-4fce-873b-d2d71469b4ac',
-        'display_name': 'Worf',
-        'handle':  'worf',
-        'created_at': now.isoformat()
-    }]
-    model['data'] = results
-    return model
+from lib.db import db
+
+#tracer = trace.get_tracer("home.activities")
+
+class HomeActivities:
+  def run(cognito_user_id=None):
+    #logger.info("HomeActivities")
+    #with tracer.start_as_current_span("home-activites-mock-data"):
+    #  span = trace.get_current_span()
+    #  now = datetime.now(timezone.utc).astimezone()
+    #  span.set_attribute("app.now", now.isoformat())
+    sql = db.template('activities','home')
+    results = db.query_array_json(sql)
+    return results
