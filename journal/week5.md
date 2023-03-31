@@ -38,4 +38,34 @@ get_user_uuids
 {'ResponseMetadata': {'RequestId': 'deb9dddc-6f91-4af8-8b1c-94c1f5e02dc3', 'HTTPStatusCode': 200, 'HTTPHeaders': {'date': 'Fri, 31 Mar 2023 18:50:55 GMT', 'x-amzn-requestid': 'deb9dddc-6f91-4af8-8b1c-94c1f5e02dc3', 'content-type': 'application/x-amz-json-1.0', 'x-amz-crc32': '2745614147', 'content-length': '2', 'server': 'Jetty(9.4.48.v20220622)'}, 'RetryAttempts': 0}}
 ...
 ````
+users uuid
+````
+cruddur=# SELECT uuid, handle from users;
+                 uuid                 |   handle    
+--------------------------------------+-------------
+ 3b59797a-ea0e-444a-a675-0d62a1805775 | andrewbrown
+ f7be996b-b6a7-453f-892a-9cc9c353299f | bayko
+(2 rows)
+````
+list and get conversations scripts are working ok
+````
+ SQL STATEMENT-[value]------
 
+    SELECT 
+      users.uuid
+    FROM users
+    WHERE
+      users.handle =%(handle)s
+   {'handle': 'andrewbrown'}
+my-uuid: 3b59797a-ea0e-444a-a675-0d62a1805775
+{
+  "ConsumedCapacity": {
+    "CapacityUnits": 0.5,
+    "TableName": "cruddur-messages"
+  },
+  "Count": 1,
+  "Items": [
+    {
+      "message": {
+        "S": "this is a filler message
+...
