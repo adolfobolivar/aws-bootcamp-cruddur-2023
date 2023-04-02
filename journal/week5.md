@@ -69,3 +69,38 @@ my-uuid: 3b59797a-ea0e-444a-a675-0d62a1805775
       "message": {
         "S": "this is a filler message
 ...
+````
+db setup updated, it adds the User ID from Cognito
+````
+./bin/db/setup
+==== db-setup
+db-drop
+DROP DATABASE
+db-create
+CREATE DATABASE
+== db-schema-load
+db-schema-load
+/workspace/aws-bootcamp-cruddur-2023/backend-flask/db/schema.sql
+CREATE EXTENSION
+NOTICE:  table "users" does not exist, skipping
+DROP TABLE
+NOTICE:  table "activities" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+== db-seed-path
+db-schema-load
+/workspace/aws-bootcamp-cruddur-2023/backend-flask/db/seed.sql
+INSERT 0 2
+INSERT 0 1
+== db-update-cognito-user-ids
+---- isoxx83 ea84081e-fffa-4712-xxxyyyyzzz
+ SQL STATEMENT-[commit with returning]------
+
+    UPDATE public.users
+    SET cognito_user_id = %(sub)s
+    WHERE
+      users.handle = %(handle)s;
+   {'handle': 'isxx83', 'sub': 'ea84081e-fffa-4712-xxxyyyyzzz'}
+   ```
+   
