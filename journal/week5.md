@@ -102,5 +102,17 @@ INSERT 0 1
     WHERE
       users.handle = %(handle)s;
    {'handle': 'isxx83', 'sub': 'ea84081e-fffa-4712-xxxyyyyzzz'}
-   ```
+`````
+cognito user id entry in db table
+````
+cruddur=# SELECT * from users;
+-[ RECORD 1 ]---+-------------------------------------
+uuid            | d4bb141f-b85b-4e3b-97bf-d5f2981b6690
+display_name    | adolfo
+handle          | isoxx
+email           | isoxx@hotmail.com
+cognito_user_id | ea84081e-fffa-4712-9ac0-437bd344da56
+created_at      | 2023-04-03 22:34:28.26897
+````
+
    

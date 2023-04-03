@@ -1,17 +1,25 @@
 from datetime import datetime, timedelta, timezone
-from opentelemetry import trace
 
+from lib.ddb import Ddb
 from lib.db import db
 
-#tracer = trace.get_tracer("home.activities")
+class MessageGroups:
+  def run(cognito_user_id):
+    model = {
+      'errors': None,
+      'data': None
+    }
 
-class HomeActivities:
-  def run(cognito_user_id=None):
-    #logger.info("HomeActivities")
-    #with tracer.start_as_current_span("home-activites-mock-data"):
-    #  span = trace.get_current_span()
-    #  now = datetime.now(timezone.utc).astimezone()
-    #  span.set_attribute("app.now", now.isoformat())
-    sql = db.template('activities','home')
-    results = db.query_array_json(sql)
-    return results
+    sql = db.template('users','uuid_from_cognito_user_id')
+    my_user_uuid = db.query_value(sql,{
+      'cognito_user_id': cognito_user_id
+    })
+
+    print(f"UUID: {my_user_uuid}")
+
+    ddb = Ddb.client()
+    data = Ddb.list_message_groups(ddb, my_user_uuid)
+    print("list_message_groups:",data)
+
+    model['data'] = data
+    return model
