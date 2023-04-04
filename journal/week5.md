@@ -103,16 +103,25 @@ INSERT 0 1
       users.handle = %(handle)s;
    {'handle': 'isxx83', 'sub': 'ea84081e-fffa-4712-xxxyyyyzzz'}
 `````
-cognito user id entry in db table
+cognito user id entry in db table after update the seed file:
 ````
 cruddur=# SELECT * from users;
 -[ RECORD 1 ]---+-------------------------------------
-uuid            | d4bb141f-b85b-4e3b-97bf-d5f2981b6690
-display_name    | adolfo
-handle          | isoxx
-email           | isoxx@hotmail.com
+uuid            | 25832edf-cb1d-4d60-aca3-6b568d826130
+display_name    | adolfo bolivar
+handle          | isoXXXXX
+email           | isoXXXXX@hotmail.com
 cognito_user_id | ea84081e-fffa-4712-9ac0-437bd344da56
-created_at      | 2023-04-03 22:34:28.26897
+created_at      | 2023-04-03 23:50:12.243699
+-[ RECORD 2 ]---+-------------------------------------
+uuid            | 16668478-d0e5-4b2c-b857-ad0f1f62d816
+display_name    | mariuYYYYY
+handle          | mariuYYYY
+email           | mariuYYYY@gmail.com
+cognito_user_id | fa27355d-1184-4b2a-b6e6-ae0ba10b5e6d
+created_at      | 2023-04-03 23:50:12.243699
 ````
+Messages tab reading the data from ddb:
 
-   
+
+Messages Group is working:
