@@ -128,3 +128,8 @@ Messages tab reading the data from ddb:
 Messages Group is working:
 
 ![Message](https://user-images.githubusercontent.com/17748375/229661746-8b5ca3ed-01e0-4e1c-a7f9-d38d80a28a9e.png)
+
+Dynamo DB working in prod
+````
+RESP ===> [{'user_handle': 'mariuYYYY', 'user_uuid': 'f6e859b9-7ea1-464c-8ef7-e3500381fcaf', 'user_display_name': 'mariu bolivar', 'sk': '2023-04-04T17:00:33.344369+00:00', 'message': 'test message', 'pk': 'GRP#e5a0b381-dfe2-4850-9b7b-6dde5859cc28', 'message_group_uuid': 'fd15d3ff-ccc7-4f0c-8baf-24a7841e32ea'}, {'user_handle': 'isos83', 'user_uuid': 'e5a0b381-dfe2-4850-9b7b-6dde5859cc28', 'user_display_name': 'adolfo bolivar', 'sk': '2023-04-04T17:00:33.344369+00:00', 'message': 'test message', 'pk': 'GRP#f6e859b9-7ea1-464c-8ef7-e3500381fcaf', 'message_group_uuid': 'fd15d3ff-ccc7-4f0c-8baf-24a7841e32ea'}]
+```
