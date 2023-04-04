@@ -123,5 +123,8 @@ created_at      | 2023-04-03 23:50:12.243699
 ````
 Messages tab reading the data from ddb:
 
+![messages](https://user-images.githubusercontent.com/17748375/229661727-658c2e6f-75c9-47de-92f4-c6c68a3d84d0.png)
 
 Messages Group is working:
+
+![Message](https://user-images.githubusercontent.com/17748375/229661746-8b5ca3ed-01e0-4e1c-a7f9-d38d80a28a9e.png)
